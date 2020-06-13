@@ -1,0 +1,19 @@
+{
+  "name": "native-prompt",
+  "version": "1.0.0",
+  "description": "Create native prompts with Node.js and Electron",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssight/native-prompt.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssight/native-prompt/issues"
+  },
+  "homepage": "https://github.com/ssight/native-prompt#readme"
+}
