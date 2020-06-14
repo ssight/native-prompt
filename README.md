@@ -62,6 +62,3 @@ prompt("This is a title.", "What would you really like to see next?", "Nothing")
     }
 })
 ```
-
-# Limitations
-Currently, MacOS is not supported, but it should be in the future. Check back soon.
