@@ -10,10 +10,11 @@
     "type": "git",
     "url": "git+https://github.com/ssight/native-prompt.git"
   },
-  "author": "",
+  "author": "ssight",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ssight/native-prompt/issues"
   },
-  "homepage": "https://github.com/ssight/native-prompt#readme"
+  "homepage": "https://github.com/ssight/native-prompt#readme",
+  "keywords": ["nodejs", "electron", "gui"]
 }
