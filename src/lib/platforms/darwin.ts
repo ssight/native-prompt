@@ -6,7 +6,7 @@ export = function (title: string, body: string, defaultText: string = ""): Promi
 
         boxSpawner.stdout.on('data', d => {
             const data = d.toString() as string;
-            if (data) resolve(data.trim() || null);
+            if (data) resolve(data.trim().split("text returned:").pop() || null);
         })
 
         boxSpawner.on('exit', () => resolve(null));
