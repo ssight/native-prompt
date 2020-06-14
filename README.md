@@ -4,6 +4,14 @@ Create native prompts with Node.js and Electron
 # What is this?
 While `alert` and `confirm` are both supported in Electron, `prompt` isn't (see [this issue](https://github.com/electron/electron/issues/472)). `native-prompt` aims to fix this by allowing you to create prompt boxes that are native to the user's OS. As an added bonus, it also works in Node.js.
 
+# Screenshots
+## Windows
+![A prompt showing on Windows](https://raw.githubusercontent.com/ssight/native-prompt/master/screenshots/Windows.png)
+## Linux
+![A prompt showing on Linux](https://raw.githubusercontent.com/ssight/native-prompt/master/screenshots/Linux.png)
+## MacOS
+![A prompt showing on MacOS](https://raw.githubusercontent.com/ssight/native-prompt/master/screenshots/MacOS.png)
+
 # Installation
 ### Through [NPM](https://www.npmjs.com/package/native-prompt):
 >`npm i native-prompt`
