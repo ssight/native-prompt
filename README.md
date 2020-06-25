@@ -21,30 +21,36 @@ While `alert` and `confirm` are both supported in Electron, `prompt` isn't (see 
 # Usage
 ## Synopsis
 ```js
-prompt (title, body, defaultText)
+prompt (title, body, options)
 ```
 ### `title:string`
 >The title you want to display at the top of the window
 ### `body:string`
 >Any helpful text to go inside the message box
-### `defaultText:string`
->The text you want to already be in the input box beforehand (optional)
+### `options: { defaultText?: string; mask?: boolean }`
+>Any (optional) extra options (see below)
+
+## Options
+### `defaultText?: string`
+>The text you want to already be in the input box beforehand
+### `mask?: boolean`
+>Whether you want the box to have a hidden input
 
 ## Examples
 ### Importing
 #### Javascript
 ```js
-const prompt = require('native-prompt').prompt
+const prompt = require('native-prompt')
 ```
 #### Typescript
 ```ts
-import { prompt } from 'native-prompt'
+import prompt from 'native-prompt'
 ```
 ---
 ### Async function usage
 ```js
 (async () => {
-    const text = await prompt("This is a title.", "What would you really like to see next?", "Nothing");
+    const text = await prompt("This is a title.", "What would you really like to see next?", { defaultText: "Nothing" });
     if (text) {
         // Do something with the input
     } else {
@@ -54,7 +60,7 @@ import { prompt } from 'native-prompt'
 ```
 ### Regular promise usage
 ```js
-prompt("This is a title.", "What would you really like to see next?", "Nothing").then(text => {
+prompt("This is a title.", "What would you really like to see next?", { defaultText: "Nothing" }).then(text => {
     if (text) {
         // Do something with the input
     } else {
@@ -62,3 +68,18 @@ prompt("This is a title.", "What would you really like to see next?", "Nothing")
     }
 })
 ```
+
+### Masked textbox example
+```js
+(async () => {
+    const password = await prompt("Login", "Enter your password to log back in.", { mask: true });
+    if (isCorrectPassword(password)) {
+        // Log the user in
+    } else {
+        // The user's entered their username or password incorrect
+    }
+})()
+```
+
+# Notes
+* For differences between 1.x and 2.x, see [this](https://github.com/ssight/native-prompt/wiki/Differences-between-1.x-and-2.x) wiki link.
