@@ -1,6 +1,6 @@
 {
   "name": "native-prompt",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "Create native prompts with Node.js and Electron",
   "main": "dist/index.js",
   "scripts": {
