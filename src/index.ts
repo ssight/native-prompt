@@ -2,13 +2,8 @@ import checkPlatform from './lib/platform-check';
 import { win32, linux, darwin } from './lib/platforms';
 
 const platform = checkPlatform();
-<<<<<<< HEAD
 export = async function (title: string, body: string, options: { defaultText?: string, mask?: boolean } = {}): Promise<string | null> {
     const defaultText: string = options.defaultText || "";
-=======
-export = async function (title: string, body: string, options: { defaultText?: string, mask?: boolean }): Promise<string | null> {
-    const defaultText: string = (options || {}).defaultText || "";
->>>>>>> 8fa4134725be3e9876af1bea687d4a9a774ca286
     
     switch (platform) {
         case 'win32': {
