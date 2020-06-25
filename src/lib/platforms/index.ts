@@ -1,4 +1,4 @@
-import win32 from './win32';
+import * as win32 from './win32';
 import linux from './linux';
 import darwin from './darwin';
 
