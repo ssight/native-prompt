@@ -82,4 +82,5 @@ prompt("This is a title.", "What would you really like to see next?", { defaultT
 ```
 
 # Notes
-* For differences between 1.x and 2.x, see [this](https://github.com/ssight/native-prompt/wiki/Differences-between-1.x-and-2.x) wiki link.
+* If you plan on using `asar` to package your electron app, make sure to read [this](https://github.com/ssight/native-prompt/wiki/Usage-with-asar)
+* For differences between 1.x and 2.x, see [this](https://github.com/ssight/native-prompt/wiki/Differences-between-1.x-and-2.x) wiki page.
